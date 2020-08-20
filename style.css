@@ -506,8 +506,15 @@ body {
 
 .item-gallery .mobile-pic-wrap .box .text,
 .item-gallery .mobile-pic-wrap .box .price {
-  text-align: left;
   font-family: "Montserrat";
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .item-gallery .mobile-pic-wrap .box .text,
+  .item-gallery .mobile-pic-wrap .box .price {
+    text-align: left;
+  }
 }
 
 .item-gallery .mobile-pic-wrap .box .pic,
@@ -551,6 +558,7 @@ body {
 
 .item-gallery .mobile-pic-wrap img {
   height: 398px;
+  margin: 0 auto;
 }
 
 .item-gallery .pic2 {
