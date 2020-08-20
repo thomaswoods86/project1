@@ -6,29 +6,37 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link href="hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/hamburgers.css" />
+  <link rel=" stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
+
   <div class="overlay">
     <div class="links">
-      <a href="https://thomaswoods86.github.io/project1/index.html">Catalog</a>
+      <a href="#catalog">Catalog</a>
       <a href="https://thomaswoods86.github.io/project1/index.html">New</a>
-      <a href="https://thomaswoods86.github.io/project1/index.html">Collections</a>
+      <a
+        href="https://thomaswoods86.github.io/project1/index.html">Collections</a>
       <a href="https://thomaswoods86.github.io/project1/index.html">About Us</a>
-      <a href="https://thomaswoods86.github.io/project1/index.html">Locations</a>
+      <a
+        href="https://thomaswoods86.github.io/project1/index.html">Locations</a>
     </div>
   </div>
   <div class="main-nav">
     <div class="wrap">
-      <a href=""><div class="logo"></div></a>
+      <a href="">
+        <div class="logo"></div>
+      </a>
 
       <ul>
+        <li><a href="#feature">Featured</a></li>
+        <li><a href="#new">New Collection</a></li>
         <li><a href="#catalog">Catalog</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#about-us">About Us</a></li>
         <li><a href="#">Locations</a></li>
       </ul>
     </div>
@@ -46,56 +54,53 @@
     </div>
   </div>
 
-  <div class="new">
-    <div class="new-wrapper">
-      <p class="new-headline">Featured</p>
+  <div class="item-gallery" id="feature">
+    <div class="item-gallery-wrapper">
+      <p class="item-gallery-headline">Featured</p>
       <div class="pic-wrap">
         <div class="box">
-          <a href="#">
-            <div class="pic">
-              <!-- <div class="mo">
-                <p>Tess Johnson</p>
-              </div> -->
-            </div>
-          </a>
+          
+          <a href="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80"
+        data-fancybox="images5" data-caption="My caption">
+        <img
+          src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80"
+          width="265" />
+      </a>
           <div class="text">Long Sleeve Top</div>
           <div class="price">$30</div>
         </div>
         <div class="box">
-          <a href="#">
-            <div class="pic2">
-              <!-- <div class="mo">
-                <p>Becca Ramos</p>
-              </div> -->
-            </div>
-          </a>
+          <a href="https://images.unsplash.com/photo-1596883540988-16ff5d2a157e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+          data-fancybox="images5" data-caption="My caption">
+          <img
+            src="https://images.unsplash.com/photo-1596883540988-16ff5d2a157e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+            width="265" />
+        </a>
           <div class="text">Lavish Black Coat </div>
           <div class="price">$30</div>
         </div>
         <div class="box">
-          <a href="#">
-            <div class="pic3">
-              <!-- <div class="mo">
-                <p>Tyrek Donaldson</p>
-              </div> -->
-            </div>
-          </a>
+          <a href="https://images.unsplash.com/photo-1495366691023-cc4eadcc2d7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+        data-fancybox="images5" data-caption="My caption">
+        <img
+          src="https://images.unsplash.com/photo-1495366691023-cc4eadcc2d7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80"
+          width="265" />
+      </a>
           <div class="text">Turtle Neck Sweater</div>
           <div class="price">$30</div>
         </div>
         <div class="box">
-          <a href="#">
-            <div class="pic4">
-              <!-- <div class="mo">
-                <p>Josh Connor</p>
-              </div> -->
-            </div>
-          </a>
+          <a href="https://images.unsplash.com/photo-1596883504669-8e45bfaac430?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+        data-fancybox="images5" data-caption="My caption">
+        <img
+          src="https://images.unsplash.com/photo-1596883504669-8e45bfaac430?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
+          width="265" />
+      </a>
           <div class="text">Relaxed Collar T-Shirt</div>
           <div class="price">$30</div>
         </div>
       </div>
-      <div class="new-button">
+      <div class="item-gallery-button">
         <a href="/">View All Items</a>
       </div>
 
@@ -103,16 +108,58 @@
 
   </div>
 
-  <div class="vid">
+  <div class="video" id="new">
     <div class="wrapp">
+      <a href="https://www.youtube.com/embed/Mxesac55Puo"
+        data-fancybox="video" data-caption="2020: Fall/Winter Wear">
       <div class="play"></div>
+      </a>
+      <a href="https://www.youtube.com/embed/Mxesac55Puo"
+        data-fancybox="video" data-caption="2020: Fall/Winter Wear">
+        <div class="dip"></div>
+      </a>
       <p>Summer 2020: Fall / Winter Wear</p>
     </div>
   </div>
 
-  <div class="new" id="catalog">
-    <div class="new-wrapper">
-      <p class="new-headline" style="color: #313131">Catalog</p>
+  <div class="catalog-spotlight" id="catalog">
+    <div class="catalog-spotlight-wrapper">
+      <p class="catalog-spotlight-headline">Catalog</p>
+
+      <div class="duo">
+
+        <div class="left">
+          <div class="big"></div>
+          <div class="category">Jackets</div>
+        </div>
+
+        <div class="right">
+          <div class="small"></div>
+          <div class="category">T-Shirts</div>
+        </div>
+
+      </div>
+
+      <div class="duo-swap">
+        <div class="left">
+  <a href="#">
+          <div class="small"></div>
+          <div class="category">Jackets</div>
+        </a>
+        </div>
+
+        <div class="right">
+          <div class="big"></div>
+          <div class="category">T-Shirts</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="item-gallery" id="catalog">
+    <div class="item-gallery-wrapper">
+      <p class="item-gallery-headline" style="color: #313131">Catalog</p>
       <div class="pic-wrap">
         <div class="box">
           <a href="#">
@@ -139,13 +186,13 @@
           <div class="text">T-Shirts</div>
         </div>
       </div>
-      <div class="new-button">
+      <div class="item-gallery-button">
         <a href="/">Shop now</a>
       </div>
 
     </div>
 
-  </div>
+  </div> -->
 
   <div class="quote">
     <div class="quote-wrapper">
@@ -155,12 +202,40 @@
     </div>
   </div>
 
+  <div class="about-us" id="about-us">
+    <div class="about-us-wrapper">
+      <p class="about-us-headline">About us</p>
+
+      <div class="duo">
+
+        <div class="left">
+          <div class="big"></div>
+        </div>
+
+        <div class="right">
+          <div class="small">
+
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <br>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem..</p>
+            <br>
+            <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+          </div>
+        </div>
+
+      </div>
+    </div> 
+  </div>
+
   <div class="footer">
     <div class="footer-wrapper">
       <div class="icons">
-        <a href="#" alt="Instagram"><img src="https://i.ibb.co/WBmkrd8/insta-white.png"></a>
-        <a href="#" alt="Twitter"><img src="https://i.ibb.co/fnTTFN1/twitter-white.png"></a>
-        <a href="#" alt="Facebook"><img src="https://i.ibb.co/TYZcYhC/facebook-white.png"></a>
+        <a href="#" alt="Instagram"><img
+            src="https://i.ibb.co/WBmkrd8/insta-white.png"></a>
+        <a href="#" alt="Twitter"><img
+            src="https://i.ibb.co/fnTTFN1/twitter-white.png"></a>
+        <a href="#" alt="Facebook"><img
+            src="https://i.ibb.co/TYZcYhC/facebook-white.png"></a>
       </div>
     </div>
   </div>
@@ -800,7 +875,13 @@
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
   </script>
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js">
+  </script>
+  <script type="text/javascript"
+    src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 
 </html>
