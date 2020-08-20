@@ -1185,8 +1185,13 @@ body {
 
 .about-us .duo {
   max-width: 1080px;
-  height: 550px;
-  margin-bottom: 100px;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .about-us .duo {
+    height: 550px;
+  }
 }
 
 .about-us .duo .left {
@@ -1222,6 +1227,7 @@ body {
 
 .about-us .duo .right {
   position: relative;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -1236,7 +1242,6 @@ body {
 }
 
 .about-us .duo .right .small {
-  text-align: center;
   margin: 0 auto;
   background: #f5f4f4;
   padding: 30px 40px;
