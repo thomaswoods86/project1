@@ -8,9 +8,20 @@ $("document").ready(function () {
 
   $(".hamburger").click(function () {
     $('.hamburger').toggleClass('is-active');
-    $(".overlay").fadeToggle("linear");
+    $(".overlay").fadeToggle();
   });
   
-  let count = $(".spotlight").length;
+  let count = $(".new").length;
   console.log(count);
+
+
+  $("a[href^='#']").click(function(e) {
+    e.preventDefault();
+    
+    var position = $($(this).attr("href")).offset().top;
+  
+    $("body, html").animate({
+      scrollTop: position
+    }, 1500, 'swing' );
+  });
 });
