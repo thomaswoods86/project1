@@ -375,9 +375,16 @@ body {
 }
 
 .item-gallery .pic-wrap {
-  max-width: 1080px;
-  margin: 0 auto;
-  text-align: center;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .item-gallery .pic-wrap {
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .item-gallery .pic-wrap .box {
@@ -453,6 +460,97 @@ body {
   .item-gallery .pic-wrap .box .pic4 {
     width: 265px;
   }
+}
+
+.item-gallery .mobile-pic-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .item-gallery .mobile-pic-wrap {
+    display: none;
+  }
+}
+
+.item-gallery .mobile-pic-wrap .box {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: .25s;
+  transition: .25s;
+  margin-bottom: 30px;
+}
+
+.item-gallery .mobile-pic-wrap .box:hover .pic,
+.item-gallery .mobile-pic-wrap .box:hover .pic2,
+.item-gallery .mobile-pic-wrap .box:hover .pic3,
+.item-gallery .mobile-pic-wrap .box:hover .pic4 {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.item-gallery .mobile-pic-wrap .box .text {
+  margin-top: 10px;
+  text-transform: capitalize;
+  color: #313131;
+  font-weight: 500;
+}
+
+.item-gallery .mobile-pic-wrap .box .price {
+  color: #E7003A;
+  font-size: .875em;
+  margin-top: 7px;
+  font-weight: 700;
+}
+
+.item-gallery .mobile-pic-wrap .box .text,
+.item-gallery .mobile-pic-wrap .box .price {
+  text-align: left;
+  font-family: "Montserrat";
+}
+
+.item-gallery .mobile-pic-wrap .box .pic,
+.item-gallery .mobile-pic-wrap .box .pic2,
+.item-gallery .mobile-pic-wrap .box .pic3,
+.item-gallery .mobile-pic-wrap .box .pic4 {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: .25s;
+  transition: .25s;
+  margin: 0 auto;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+@media (min-width: 768px) {
+  .item-gallery .mobile-pic-wrap .box .pic,
+  .item-gallery .mobile-pic-wrap .box .pic2,
+  .item-gallery .mobile-pic-wrap .box .pic3,
+  .item-gallery .mobile-pic-wrap .box .pic4 {
+    width: 250px;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
+@media (min-width: 1024px) {
+  .item-gallery .mobile-pic-wrap .box .pic,
+  .item-gallery .mobile-pic-wrap .box .pic2,
+  .item-gallery .mobile-pic-wrap .box .pic3,
+  .item-gallery .mobile-pic-wrap .box .pic4 {
+    width: 265px;
+  }
+}
+
+.item-gallery .mobile-pic-wrap img {
+  height: 398px;
 }
 
 .item-gallery .pic2 {
@@ -1215,7 +1313,7 @@ body {
 
 .about-us .duo .left .big {
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1535295972055-1c762f4483e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80") center no-repeat;
+  background: url("https://images.unsplash.com/photo-1584628899727-dddeb7284434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1686&q=80") top no-repeat;
   background-size: cover;
 }
 
