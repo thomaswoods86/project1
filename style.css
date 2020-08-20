@@ -1188,7 +1188,7 @@ body {
   height: auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about-us .duo {
     height: 550px;
   }
@@ -1203,7 +1203,7 @@ body {
   display: block;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about-us .duo .left {
     position: relative;
     float: left;
@@ -1232,7 +1232,7 @@ body {
   height: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about-us .duo .right {
     position: relative;
     float: left;
@@ -1247,7 +1247,7 @@ body {
   padding: 30px 40px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .about-us .duo .right .small {
     position: absolute;
     top: 50%;
