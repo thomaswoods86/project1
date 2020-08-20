@@ -479,7 +479,13 @@ body {
   position: relative;
   -webkit-transition: .25s;
   transition: .25s;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .item-gallery .mobile-pic-wrap .box {
+    margin-bottom: 30px;
+  }
 }
 
 .item-gallery .mobile-pic-wrap .box:hover .pic,
@@ -558,7 +564,10 @@ body {
 
 .item-gallery .mobile-pic-wrap img {
   height: 398px;
+  width: 80%;
   margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .item-gallery .pic2 {
