@@ -1,0 +1,36 @@
+.quote {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+
+  &-wrapper {
+    max-width: 1080px;
+    padding: 40px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $sans3;
+    color: $white;
+
+    p {
+      color: #313131;
+      font-size: 1.25em;
+      line-height: 1.75em;
+      padding: 0 20px;
+      font-weight: 500;
+
+      @include bp(medium) {
+        padding: 0 100px;
+      }
+    }
+
+    .person {
+      color: $pink-red;
+      font-size: 1em;
+      line-height: 1.75em;
+      font-weight: 700;
+      padding: 20px 0 0;
+      text-transform: uppercase;
+    }
+  }
+}

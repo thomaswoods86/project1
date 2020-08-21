@@ -1,0 +1,95 @@
+.cta {
+  width: 100%;
+
+  &-wrapper {
+    max-width: 1080px;
+    padding: 40px 0px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $sans;
+    color: $white;
+  }
+
+  &-headline p {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  &-subtext p {
+    font-size: 1.1rem;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &-button {
+    border: 3px solid $white;
+    display: inline-block;
+    text-transform: uppercase;
+
+
+    a {
+      display: block;
+      color: $white;
+      padding: 10px 15px;
+      text-decoration: none;
+      transition: .25s;
+      font-size: 14px;
+      font-weight: 800;
+      ;
+
+      &:hover {
+        background-color: $white;
+        color: initial;
+      }
+    }
+  }
+
+
+
+  &.green {
+    background-color: $green;
+
+    .cta-button a:hover {
+      color: $green;
+    }
+  }
+
+  &.blue {
+    background-color: $blue;
+
+    .cta-button a:hover {
+      color: $blue;
+    }
+  }
+
+  &.maroon {
+    background-color: $maroon;
+
+    .cta-button a:hover {
+      color: $maroon;
+    }
+  }
+
+  &.yellow {
+    background-color: $yellow;
+
+    .cta-wrapper {
+      color: black;
+    }
+
+    .cta-button {
+      border: 3px solid black;
+
+      a {
+        color: black;
+
+        &:hover {
+          background-color: #00000044;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

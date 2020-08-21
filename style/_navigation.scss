@@ -1,0 +1,126 @@
+.main-nav {
+
+  display: none;
+
+  @include bp(small) {
+    display: block;
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  @include bp(medium) {
+    padding: 30px 0px;
+  }
+
+  .wrap {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0px 20px;
+
+    @include bp(medium) {
+      padding: 0px 40px;
+    }
+
+
+  }
+
+  .logo {
+    display: none;
+
+    @include bp(large) {
+      display: block;
+      position: absolute;
+      height: 60px;
+      width: 150px;
+      // background: url("https://i.ibb.co/2SJtYMx/logo-1.png");
+      top: -20px;
+      // outline: 2px solid $pink-red;
+    }
+  }
+
+  .icons {
+    position: absolute;
+    width: 150px;
+    right: 0;
+
+    img {
+      width: 17px;
+      height: 17px;
+      padding: 0 5px;
+      transition: .25s;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  ul {
+    display: none;
+
+    @include bp(medium) {
+      display: block;
+      list-style-type: none;
+      text-align: center;
+    }
+  }
+
+  li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 2%;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-family: $sans3;
+    font-weight: 600;
+    font-size: .75em;
+    text-transform: uppercase;
+    transition: .25s;
+
+    &:hover {
+      color: #ff0041;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.938);
+  z-index: 98;
+  display: none;
+
+  .links {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    @include bp(small) {
+      left: 50%;
+      top: 30%;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 25px;
+      font-size: 1.5em;
+      text-decoration: none;
+      font-family: $sans3;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+}
+
+.menu-toggle {
+  display: block;
+}

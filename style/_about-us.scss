@@ -1,0 +1,200 @@
+.about-us {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  padding: 20px 0;
+  transition: .25s;
+
+  &:hover p.about-us-headline {
+    // color: $pink-red;
+
+  }
+
+  &-wrapper {
+    display: block;
+    max-width: 1080px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    font-family: $sans3;
+    color: $black;
+
+    @include bp(medium) {
+      padding: 0px 40px 30px;
+    }
+  }
+
+  &-button {
+    border: 1px solid #313131;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin: 10px 0 10px;
+    position: relative;
+
+
+
+    @include bp(medium) {
+      margin-top: 100px;
+    }
+
+    a {
+      display: block;
+      color: $black;
+      padding: 10px 30px;
+      text-decoration: none;
+      transition: .25s;
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 0px;
+
+
+      &:hover {
+        color: white;
+        background-color: #313131;
+      }
+    }
+
+    a:hover:after {
+      background-color: #fff;
+    }
+  }
+
+
+  &-subtext p {
+    font-size: 1.1rem;
+    // padding-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  p.about-us-headline {
+    position: relative;
+    width: 80%;
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 40px;
+    padding: 0;
+    text-align: center;
+    z-index: 9;
+    opacity: .7;
+    top: 0;
+    text-transform: uppercase;
+    color: #313131;
+    margin: 0 auto;
+    transition: .25s;
+
+    @include bp(small) {
+      width: 100%;
+      font-size: 3em;
+      text-align: center;
+      padding-left: 0px;
+    }
+
+    @include bp(medium) {
+      width: 100%;
+      top: 33px;
+      font-size: 6em;
+      margin-bottom: 0px;
+    }
+
+    @include bp(large) {
+      position: relative;
+      width: auto;
+      top: 35px;
+      text-align: left;
+      font-size: 7em;
+      margin: auto;
+    }
+  }
+
+  .duo {
+    max-width: 1080px;
+    height: auto;
+    @include bp(medium) {
+      height: 550px;
+    }
+
+    .left {
+      position: relative;
+      // float: left;
+      width: 100%;
+      margin: 0 auto;
+      height: 350px;
+      z-index: 2;
+      display: block;
+
+      @include bp(medium) {
+        position: relative;
+      float: left;
+      width: 50%;
+      height: 550px;
+      z-index: 2;
+      }
+
+      .big {
+        height: 100%;
+        background: url("https://images.unsplash.com/photo-1584628899727-dddeb7284434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1686&q=80") top no-repeat;
+        background-size: cover;
+        @include bp(large) {
+        background-size: cover;
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      @include bp(medium) {
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 100%;
+
+      }
+
+      .small {
+        margin: 0 auto;
+        background: rgb(245, 244, 244);
+        padding: 30px 40px;
+        
+        @include bp(medium) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: auto;
+        width: 70%;
+        background: rgb(245, 244, 244);
+        padding: 70px;
+        }
+
+        &:after {
+          @include bp(large) {
+          content: '';
+          position: absolute;
+          height: 100%;
+          left: 100%;
+          width: 1000px;
+          top: 0;
+          background: rgb(245, 244, 244);
+        }
+      }
+
+        &:before {
+          @include bp(large) {
+          content: '';
+          position: absolute;
+          height: 100%;
+          right: 100%;
+          width: 200px;
+          top: 0;
+          background: rgb(245, 244, 244);
+          }
+        }
+      }
+    }
+  }
+}
