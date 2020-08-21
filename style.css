@@ -3,6 +3,45 @@
 * {
   padding: 0;
   margin: 0;
+  outline: 1px dashed indigo;
+}
+
+@media (max-width: 320px) {
+  * {
+    outline: 1px dashed red;
+  }
+}
+
+@media (min-width: 480px) {
+  * {
+    outline: 1px dashed orange;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    outline: 1px dashed yellow;
+  }
+}
+
+@media (min-width: 1024px) {
+  * {
+    outline: 1px dashed green;
+  }
+}
+
+@media (min-width: 1280px) {
+  * {
+    outline: 1px dashed blue;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+* + * {
+  margin: 1rem 0 0;
 }
 
 body {
@@ -737,7 +776,6 @@ body {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 10px;
-  width: 100%;
   background: #fff;
 }
 
@@ -774,7 +812,6 @@ body {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 10px;
-  width: 100%;
   background: #fff;
 }
 
@@ -817,7 +854,6 @@ body {
   font-size: 1rem;
   font-weight: 600;
   margin-top: 10px;
-  width: 100%;
   background: #fff;
 }
 
@@ -842,11 +878,12 @@ body {
 }
 
 .catalog-spotlight .duo-swap .right .category {
+  display: inline-block;
   font-size: 1rem;
   font-weight: 600;
   margin-top: 10px;
-  width: 100%;
   background: #fff;
+  width: auto;
 }
 
 .wysiwyg {
