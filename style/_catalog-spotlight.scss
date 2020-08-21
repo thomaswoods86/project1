@@ -145,7 +145,6 @@
           font-size: 1rem;
           font-weight: 600;
           margin-top: 10px;
-          width: 100%;
           background: #fff;
         }
       }
@@ -177,7 +176,6 @@
           font-size: 1rem;
           font-weight: 600;
           margin-top: 10px;
-          width: 100%;
           background: #fff;
         }
       }
@@ -215,7 +213,6 @@
           font-size: 1rem;
           font-weight: 600;
           margin-top: 10px;
-          width: 100%;
           background: #fff;
         }
 
@@ -236,11 +233,12 @@
         }
 
         .category {
+          display: inline-block;
           font-size: 1rem;
           font-weight: 600;
           margin-top: 10px;
-          width: 100%;
           background: #fff;
+          width: auto;
         }
       }
     }
