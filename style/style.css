@@ -9,12 +9,8 @@
   margin: 0;
 }
 
-* + * {
-  margin: 1rem 0 0;
-}
-
-.main-nav, .mma, body {
-  margin: 0rem 0;
+body {
+  overflow-x: hidden;
 }
 
 .cta {
@@ -718,14 +714,20 @@
 
 .catalog-spotlight .duo {
   max-width: 1080px;
-  height: 550px;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .catalog-spotlight .duo {
+    height: 550px;
+  }
 }
 
 .catalog-spotlight .duo .left {
   position: relative;
   float: left;
-  width: 50%;
-  height: 550px;
+  width: 47%;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,9 +737,25 @@
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo .left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .catalog-spotlight .duo .left .big {
   height: 100%;
-  background: url("//unsplash.it//900/900") center no-repeat;
+  background: url("//unsplash.it//900/910") center no-repeat;
   background-size: cover;
 }
 
@@ -750,9 +768,9 @@
 
 .catalog-spotlight .duo .right {
   position: relative;
-  float: left;
-  width: 50%;
-  height: 550px;
+  float: right;
+  width: 47%;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,39 +780,78 @@
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo .right {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .catalog-spotlight .duo .right .small {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 70%;
-  width: 70%;
+  height: 100%;
   background: url("//unsplash.it//901/900") center no-repeat;
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo .right .small {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 70%;
+    width: 70%;
+    background: url("//unsplash.it//901/900") center no-repeat;
+    background-size: cover;
+  }
+}
+
 .catalog-spotlight .duo .right .category {
-  position: absolute;
-  bottom: 15%;
-  left: 15%;
   font-size: 1rem;
   font-weight: 600;
   margin-top: 10px;
   background: #fff;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo .right .category {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    background: #fff;
+  }
+}
+
 .catalog-spotlight .duo-swap {
+  display: block;
   max-width: 1080px;
-  height: 550px;
-  margin-top: 60px;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .catalog-spotlight .duo-swap {
+    height: 550px;
+  }
 }
 
 .catalog-spotlight .duo-swap .left {
   position: relative;
-  float: left;
-  width: 50%;
-  height: 550px;
+  float: right;
+  width: 47%;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,33 +861,66 @@
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo-swap .left {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .catalog-spotlight .duo-swap .left .small {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 70%;
-  width: 70%;
-  background: url("//unsplash.it//902/902") center no-repeat;
+  height: 100%;
+  background: url("//unsplash.it//901/901") center no-repeat;
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo-swap .left .small {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: 70%;
+    width: 70%;
+    background: url("//unsplash.it//901/901") center no-repeat;
+    background-size: cover;
+  }
+}
+
 .catalog-spotlight .duo-swap .left .category {
-  position: absolute;
-  bottom: 15%;
-  left: 15%;
   font-size: 1rem;
   font-weight: 600;
   margin-top: 10px;
   background: #fff;
+}
+
+@media (min-width: 768px) {
+  .catalog-spotlight .duo-swap .left .category {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    background: #fff;
+  }
 }
 
 .catalog-spotlight .duo-swap .right {
   position: relative;
   float: left;
-  width: 50%;
-  height: 550px;
+  width: 47%;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,9 +930,25 @@
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .catalog-spotlight .duo-swap .right {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 550px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .catalog-spotlight .duo-swap .right .big {
   height: 100%;
-  background: url("//unsplash.it//905/905") center no-repeat;
+  background: url("//unsplash.it//900/900") center no-repeat;
   background-size: cover;
 }
 
@@ -1189,6 +1295,7 @@
   padding: 20px 0;
   -webkit-transition: .25s;
   transition: .25s;
+  clear: both;
 }
 
 .about-us-wrapper {
@@ -1266,47 +1373,18 @@
   transition: .25s;
 }
 
-@media (min-width: 480px) {
-  .about-us p.about-us-headline {
-    width: 100%;
-    font-size: 3em;
-    text-align: center;
-    padding-left: 0px;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-us p.about-us-headline {
-    width: 100%;
-    top: 33px;
-    font-size: 6em;
-    margin-bottom: 0px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .about-us p.about-us-headline {
-    position: relative;
-    width: auto;
-    top: 35px;
-    text-align: left;
-    font-size: 7em;
-    margin: auto;
-  }
-}
-
-.about-us .duo {
+.about-us .au-duo {
   max-width: 1080px;
   height: auto;
 }
 
 @media (min-width: 768px) {
-  .about-us .duo {
+  .about-us .au-duo {
     height: 550px;
   }
 }
 
-.about-us .duo .left {
+.about-us .au-duo .au-left {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -1316,7 +1394,7 @@
 }
 
 @media (min-width: 768px) {
-  .about-us .duo .left {
+  .about-us .au-duo .au-left {
     position: relative;
     float: left;
     width: 50%;
@@ -1325,19 +1403,19 @@
   }
 }
 
-.about-us .duo .left .big {
+.about-us .au-duo .au-left .au-big {
   height: 100%;
   background: url("https://images.unsplash.com/photo-1584628899727-dddeb7284434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1686&q=80") top no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 1024px) {
-  .about-us .duo .left .big {
+  .about-us .au-duo .au-left .au-big {
     background-size: cover;
   }
 }
 
-.about-us .duo .right {
+.about-us .au-duo .au-right {
   position: relative;
   display: block;
   width: 100%;
@@ -1345,7 +1423,7 @@
 }
 
 @media (min-width: 768px) {
-  .about-us .duo .right {
+  .about-us .au-duo .au-right {
     position: relative;
     float: left;
     width: 50%;
@@ -1353,14 +1431,14 @@
   }
 }
 
-.about-us .duo .right .small {
+.about-us .au-duo .au-right .au-small {
   margin: 0 auto;
   background: #f5f4f4;
   padding: 30px 40px;
 }
 
 @media (min-width: 768px) {
-  .about-us .duo .right .small {
+  .about-us .au-duo .au-right .au-small {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1374,19 +1452,19 @@
 }
 
 @media (min-width: 1024px) {
-  .about-us .duo .right .small:after {
+  .about-us .au-duo .au-right .au-small:after {
     content: '';
     position: absolute;
     height: 100%;
     left: 100%;
-    width: 81%;
+    width: 100%;
     top: 0;
     background: #f5f4f4;
   }
 }
 
 @media (min-width: 1024px) {
-  .about-us .duo .right .small:before {
+  .about-us .au-duo .au-right .au-small:before {
     content: '';
     position: absolute;
     height: 100%;

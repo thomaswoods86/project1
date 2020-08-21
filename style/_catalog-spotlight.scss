@@ -124,20 +124,33 @@
 
     .duo {
       max-width: 1080px;
+      height: auto;
+      @include bp(large){
       height: 550px;
+      }
 
 
       .left {
         position: relative;
         float: left;
-        width: 50%;
-        height: 550px;
+        width: 47%;
+        height: 200px;
         display: flex;
         flex-direction: column;
 
+        @include bp(medium){
+          position: relative;
+          float: left;
+          width: 50%;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+        }
+
+
         .big {
           height: 100%;
-          background: url("//unsplash.it//900/900") center no-repeat;
+          background: url("//unsplash.it//900/910") center no-repeat;
           background-size: cover;
         }
 
@@ -151,13 +164,27 @@
 
       .right {
         position: relative;
-        float: left;
-        width: 50%;
-        height: 550px;
+        float: right;
+        width: 47%;
+        height: 200px;
         display: flex;
         flex-direction: column;
 
+        @include bp(medium){
+          position: relative;
+          float: left;
+          width: 50%;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+        }
+
         .small {
+          height: 100%;
+          background: url("//unsplash.it//901/900") center no-repeat;
+          background-size: cover;
+          
+          @include bp(medium){
           position: absolute;
           top: 45%;
           left: 50%;
@@ -165,11 +192,17 @@
           height: 70%;
           width: 70%;
           background: url("//unsplash.it//901/900") center no-repeat;
-
           background-size: cover;
+          }
         }
 
         .category {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 10px;
+            background: #fff;
+
+            @include bp(medium){
           position: absolute;
           bottom: 15%;
           left: 15%;
@@ -177,36 +210,61 @@
           font-weight: 600;
           margin-top: 10px;
           background: #fff;
+            }
         }
       }
     }
 
     .duo-swap {
+      display: block;
       max-width: 1080px;
+      height: auto;
+      @include bp(large){
       height: 550px;
-      margin-top: 60px;
+      }
 
 
       .left {
         position: relative;
-        float: left;
-        width: 50%;
-        height: 550px;
+        float: right;
+        width: 47%;
+        height: 200px;
         display: flex;
         flex-direction: column;
 
+        @include bp(medium){
+          position: relative;
+          float: left;
+          width: 50%;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+        }
+
         .small {
+          height: 100%;
+          background: url("//unsplash.it//901/901") center no-repeat;
+          background-size: cover;
+          
+          @include bp(medium){
           position: absolute;
           top: 45%;
           left: 50%;
           transform: translate(-50%, -50%);
           height: 70%;
           width: 70%;
-          background: url("//unsplash.it//902/902") center no-repeat;
+          background: url("//unsplash.it//901/901") center no-repeat;
           background-size: cover;
+          }
         }
 
         .category {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 10px;
+            background: #fff;
+
+            @include bp(medium){
           position: absolute;
           bottom: 15%;
           left: 15%;
@@ -214,21 +272,30 @@
           font-weight: 600;
           margin-top: 10px;
           background: #fff;
+            }
         }
-
       }
 
       .right {
         position: relative;
         float: left;
-        width: 50%;
-        height: 550px;
+        width: 47%;
+        height: 200px;
         display: flex;
         flex-direction: column;
 
+        @include bp(medium){
+          position: relative;
+          float: left;
+          width: 50%;
+          height: 550px;
+          display: flex;
+          flex-direction: column;
+        }
+
         .big {
           height: 100%;
-          background: url("//unsplash.it//905/905") center no-repeat;
+          background: url("//unsplash.it//900/900") center no-repeat;
           background-size: cover;
         }
 
