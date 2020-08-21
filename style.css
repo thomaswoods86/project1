@@ -562,10 +562,6 @@ body {
   }
 }
 
-.item-gallery .mobile-pic-wrap .slick-prev, .item-gallery .mobile-pic-wrap .slick-next {
-  background: #333;
-}
-
 .item-gallery .mobile-pic-wrap img {
   height: 200px;
   width: 80%;

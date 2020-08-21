@@ -14,19 +14,19 @@ $("document").ready(function () {
   // $('.pic-wrap').slick('unslick');
 
   $('.mobile-pic-wrap').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    autoplay: true,
-    dots: true,
-    autoplaySpeed: 4000,
+    
     responsive: [
       {
-        breakpoint: 500,
+        breakpoint: 480,
         settings: {
           arrows: true,
           centerMode: true,
-          centerPadding: '30px',
-          slidesToShow: 1
+          centerPadding: '0px',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          dots: true,
+          autoplaySpeed: 4000,
         }
       }
     ]
