@@ -731,6 +731,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -774,6 +775,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -835,6 +837,7 @@ body {
   display: block;
   max-width: 1080px;
   height: auto;
+  padding-top: 30px;
 }
 
 @media (min-width: 1024px) {
@@ -856,6 +859,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -925,6 +929,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
