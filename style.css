@@ -562,28 +562,16 @@ body {
   }
 }
 
+.item-gallery .mobile-pic-wrap .slick-prev, .item-gallery .mobile-pic-wrap .slick-next {
+  background: #333;
+}
+
 .item-gallery .mobile-pic-wrap img {
-  height: 398px;
+  height: 200px;
   width: 80%;
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.item-gallery .pic2 {
-  background: url("https://images.unsplash.com/photo-1596883540988-16ff5d2a157e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80");
-}
-
-.item-gallery .pic {
-  background: url("https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80");
-}
-
-.item-gallery .pic4 {
-  background: url("https://images.unsplash.com/photo-1596883504669-8e45bfaac430?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
-}
-
-.item-gallery .pic3 {
-  background: url("https://images.unsplash.com/photo-1596935884609-4afc79468c2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80");
 }
 
 @media (max-width: 320px) {
@@ -745,7 +733,7 @@ body {
 
 .catalog-spotlight .duo .left .big {
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80") center no-repeat;
+  background: url("//unsplash.it//900/900") center no-repeat;
   background-size: cover;
 }
 
@@ -779,7 +767,7 @@ body {
           transform: translate(-50%, -50%);
   height: 70%;
   width: 70%;
-  background: url("https://images.unsplash.com/photo-1596883540988-16ff5d2a157e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80") center no-repeat;
+  background: url("//unsplash.it//901/900") center no-repeat;
   background-size: cover;
 }
 
@@ -822,7 +810,7 @@ body {
           transform: translate(-50%, -50%);
   height: 70%;
   width: 70%;
-  background: url("https://images.unsplash.com/photo-1596935884609-4afc79468c2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80") center no-repeat;
+  background: url("//unsplash.it//902/902") center no-repeat;
   background-size: cover;
 }
 
@@ -853,7 +841,7 @@ body {
 
 .catalog-spotlight .duo-swap .right .big {
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1596883504669-8e45bfaac430?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80") center no-repeat;
+  background: url("//unsplash.it//905/905") center no-repeat;
   background-size: cover;
 }
 
