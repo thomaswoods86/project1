@@ -411,14 +411,12 @@ body {
   margin-top: 10px;
   text-transform: capitalize;
   color: #313131;
-  font-weight: 500;
 }
 
 .item-gallery .pic-wrap .box .price {
   color: #E7003A;
   font-size: .875em;
   margin-top: 7px;
-  font-weight: 700;
 }
 
 .item-gallery .pic-wrap .box .text,
@@ -504,14 +502,12 @@ body {
   margin-top: 10px;
   text-transform: capitalize;
   color: #313131;
-  font-weight: 500;
 }
 
 .item-gallery .mobile-pic-wrap .box .price {
   color: #E7003A;
   font-size: .875em;
   margin-top: 7px;
-  font-weight: 700;
 }
 
 .item-gallery .mobile-pic-wrap .box .text,
@@ -727,7 +723,7 @@ body {
   position: relative;
   float: left;
   width: 47%;
-  height: 200px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -755,22 +751,23 @@ body {
 
 .catalog-spotlight .duo .left .big {
   height: 100%;
-  background: url("//unsplash.it//900/910") center no-repeat;
+  background: url("//unsplash.it//900/900") center no-repeat;
   background-size: cover;
 }
 
 .catalog-spotlight .duo .left .category {
   font-size: 1rem;
-  font-weight: 600;
   margin-top: 10px;
   background: #fff;
 }
 
 .catalog-spotlight .duo .right {
   position: relative;
-  float: right;
+  float: left;
   width: 47%;
-  height: 200px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,6 +780,8 @@ body {
 @media (min-width: 768px) {
   .catalog-spotlight .duo .right {
     position: relative;
+    margin-top: 0;
+    margin-left: 0;
     float: left;
     width: 50%;
     height: 550px;
@@ -798,7 +797,7 @@ body {
 
 .catalog-spotlight .duo .right .small {
   height: 100%;
-  background: url("//unsplash.it//901/900") center no-repeat;
+  background: url("//unsplash.it//900/900") center no-repeat;
   background-size: cover;
 }
 
@@ -811,14 +810,13 @@ body {
             transform: translate(-50%, -50%);
     height: 70%;
     width: 70%;
-    background: url("//unsplash.it//901/900") center no-repeat;
+    background: url("//unsplash.it//900/900") center no-repeat;
     background-size: cover;
   }
 }
 
 .catalog-spotlight .duo .right .category {
   font-size: 1rem;
-  font-weight: 600;
   margin-top: 10px;
   background: #fff;
 }
@@ -829,7 +827,6 @@ body {
     bottom: 15%;
     left: 15%;
     font-size: 1rem;
-    font-weight: 600;
     margin-top: 10px;
     background: #fff;
   }
@@ -851,7 +848,9 @@ body {
   position: relative;
   float: right;
   width: 47%;
-  height: 200px;
+  height: 300px;
+  margin-top: 40px;
+  margin-left: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,6 +866,8 @@ body {
     float: left;
     width: 50%;
     height: 550px;
+    margin-top: 0;
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -879,7 +880,7 @@ body {
 
 .catalog-spotlight .duo-swap .left .small {
   height: 100%;
-  background: url("//unsplash.it//901/901") center no-repeat;
+  background: url("//unsplash.it//900/900") center no-repeat;
   background-size: cover;
 }
 
@@ -892,14 +893,13 @@ body {
             transform: translate(-50%, -50%);
     height: 70%;
     width: 70%;
-    background: url("//unsplash.it//901/901") center no-repeat;
+    background: url("//unsplash.it//900/900") center no-repeat;
     background-size: cover;
   }
 }
 
 .catalog-spotlight .duo-swap .left .category {
   font-size: 1rem;
-  font-weight: 600;
   margin-top: 10px;
   background: #fff;
 }
@@ -910,7 +910,6 @@ body {
     bottom: 15%;
     left: 15%;
     font-size: 1rem;
-    font-weight: 600;
     margin-top: 10px;
     background: #fff;
   }
@@ -920,7 +919,7 @@ body {
   position: relative;
   float: left;
   width: 47%;
-  height: 200px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,7 +954,6 @@ body {
 .catalog-spotlight .duo-swap .right .category {
   display: inline-block;
   font-size: 1rem;
-  font-weight: 600;
   margin-top: 10px;
   background: #fff;
   width: auto;
@@ -1371,6 +1369,35 @@ body {
   margin: 0 auto;
   -webkit-transition: .25s;
   transition: .25s;
+}
+
+@media (min-width: 480px) {
+  .about-us p.about-us-headline {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us p.about-us-headline {
+    width: 100%;
+    top: 33px;
+    font-size: 6em;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-us p.about-us-headline {
+    position: relative;
+    width: auto;
+    top: 35px;
+    text-align: left;
+    font-size: 7em;
+    margin: auto;
+  }
 }
 
 .about-us .au-duo {

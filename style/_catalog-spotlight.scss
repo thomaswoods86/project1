@@ -134,7 +134,7 @@
         position: relative;
         float: left;
         width: 47%;
-        height: 200px;
+        height: 300px;
         display: flex;
         flex-direction: column;
 
@@ -150,13 +150,13 @@
 
         .big {
           height: 100%;
-          background: url("//unsplash.it//900/910") center no-repeat;
+          background: url("//unsplash.it//900/900") center no-repeat;
           background-size: cover;
         }
 
         .category {
           font-size: 1rem;
-          font-weight: 600;
+          // font-weight: 600;
           margin-top: 10px;
           background: #fff;
         }
@@ -164,14 +164,19 @@
 
       .right {
         position: relative;
-        float: right;
+        float: left;
         width: 47%;
-        height: 200px;
+        height: 300px;
+        margin-top: 40px;
+        margin-left: 25px;
         display: flex;
         flex-direction: column;
-
+        // clear: both;
+        
         @include bp(medium){
           position: relative;
+          margin-top: 0;
+          margin-left: 0;
           float: left;
           width: 50%;
           height: 550px;
@@ -181,7 +186,7 @@
 
         .small {
           height: 100%;
-          background: url("//unsplash.it//901/900") center no-repeat;
+          background: url("//unsplash.it//900/900") center no-repeat;
           background-size: cover;
           
           @include bp(medium){
@@ -191,14 +196,14 @@
           transform: translate(-50%, -50%);
           height: 70%;
           width: 70%;
-          background: url("//unsplash.it//901/900") center no-repeat;
+          background: url("//unsplash.it//900/900") center no-repeat;
           background-size: cover;
           }
         }
 
         .category {
             font-size: 1rem;
-            font-weight: 600;
+            // font-weight: 600;
             margin-top: 10px;
             background: #fff;
 
@@ -207,7 +212,7 @@
           bottom: 15%;
           left: 15%;
           font-size: 1rem;
-          font-weight: 600;
+          // font-weight: 600;
           margin-top: 10px;
           background: #fff;
             }
@@ -228,7 +233,9 @@
         position: relative;
         float: right;
         width: 47%;
-        height: 200px;
+        height: 300px;
+        margin-top: 40px;
+        margin-left: 3%;
         display: flex;
         flex-direction: column;
 
@@ -237,13 +244,15 @@
           float: left;
           width: 50%;
           height: 550px;
+          margin-top: 0;
+        margin-left: 0;
           display: flex;
           flex-direction: column;
         }
 
         .small {
           height: 100%;
-          background: url("//unsplash.it//901/901") center no-repeat;
+          background: url("//unsplash.it//900/900") center no-repeat;
           background-size: cover;
           
           @include bp(medium){
@@ -253,14 +262,14 @@
           transform: translate(-50%, -50%);
           height: 70%;
           width: 70%;
-          background: url("//unsplash.it//901/901") center no-repeat;
+          background: url("//unsplash.it//900/900") center no-repeat;
           background-size: cover;
           }
         }
 
         .category {
             font-size: 1rem;
-            font-weight: 600;
+            // font-weight: 600;
             margin-top: 10px;
             background: #fff;
 
@@ -269,7 +278,7 @@
           bottom: 15%;
           left: 15%;
           font-size: 1rem;
-          font-weight: 600;
+          // font-weight: 600;
           margin-top: 10px;
           background: #fff;
             }
@@ -280,7 +289,7 @@
         position: relative;
         float: left;
         width: 47%;
-        height: 200px;
+        height: 300px;
         display: flex;
         flex-direction: column;
 
@@ -302,7 +311,7 @@
         .category {
           display: inline-block;
           font-size: 1rem;
-          font-weight: 600;
+          // font-weight: 600;
           margin-top: 10px;
           background: #fff;
           width: auto;

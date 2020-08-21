@@ -85,6 +85,28 @@
     margin: 0 auto;
     transition: .25s;
 
+    @include bp(small) {
+      width: 100%;
+      font-size: 3em;
+      text-align: center;
+      padding-left: 0px;
+    }
+
+    @include bp(medium) {
+      width: 100%;
+      top: 33px;
+      font-size: 6em;
+      margin-bottom: 0px;
+    }
+
+    @include bp(large) {
+      position: relative;
+      width: auto;
+      top: 35px;
+      text-align: left;
+      font-size: 7em;
+      margin: auto;
+    }
   }
 
   .au-duo {
