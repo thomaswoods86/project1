@@ -752,7 +752,7 @@ body {
 
 .catalog-spotlight .duo .left .big {
   height: 100%;
-  background: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=80") center no-repeat;
+  background: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=80") top no-repeat;
   background-size: cover;
 }
 
@@ -831,6 +831,16 @@ body {
     margin-top: 10px;
     background: #fff;
   }
+}
+
+.catalog-spotlight .duo a, .catalog-spotlight .duo-swap a {
+  color: black;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.catalog-spotlight .duo a:hover, .catalog-spotlight .duo-swap a:hover {
+  color: #E7003A;
 }
 
 .catalog-spotlight .duo-swap {
