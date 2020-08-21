@@ -1068,7 +1068,7 @@ body {
 
 .video .wrapp {
   background-size: cover;
-  height: 400px;
+  height: 200px;
   max-width: 1080px;
   margin: 0 auto;
   position: relative;
@@ -1152,7 +1152,7 @@ body {
 .video .dip {
   position: relative;
   max-width: 1080px;
-  height: 700px !important;
+  height: 100% !important;
   background: url("https://images.unsplash.com/photo-1534126416832-a88fdf2911c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80") no-repeat center;
   background-size: cover;
 }
