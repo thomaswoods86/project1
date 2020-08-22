@@ -723,8 +723,10 @@ body {
   }
 }
 
-.catalog-spotlight .duo a:nth-of-type(2):hover {
-  color: #fff;
+@media (min-width: 768px) {
+  .catalog-spotlight .duo a:nth-of-type(2):hover {
+    color: #fff;
+  }
 }
 
 .catalog-spotlight .duo .left {
@@ -897,8 +899,10 @@ body {
   }
 }
 
-.catalog-spotlight .duo-swap a:nth-of-type(1):hover {
-  color: #fff;
+@media (min-width: 768px) {
+  .catalog-spotlight .duo-swap a:nth-of-type(1):hover {
+    color: #fff;
+  }
 }
 
 .catalog-spotlight .duo-swap .left {

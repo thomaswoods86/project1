@@ -135,7 +135,9 @@
 
 
     a:nth-of-type(2):hover {
+      @include bp(medium) {
       color: #fff;
+      }
     }
 
 
@@ -276,7 +278,9 @@
     }
 
     a:nth-of-type(1):hover {
+      @include bp(medium) {
       color: #fff;
+      }
     }
 
     .left {
