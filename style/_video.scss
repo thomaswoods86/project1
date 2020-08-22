@@ -25,7 +25,7 @@
     overflow: hidden;
     filter: grayscale(.5);
     transition: .25s;
-
+    
     @include bp(medium) {
       height: 550px;
     }
@@ -49,8 +49,6 @@
       position: absolute;
       opacity: .3;
     }
-
-    
 
     p {
       position: absolute;

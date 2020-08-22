@@ -5,12 +5,12 @@
   margin: 0px auto;
   padding: 20px 0;
   transition: .25s;
-
+  
   &:hover p.item-gallery-headline {
     color: $pink-red;
-
+    
   }
-
+  
   &-wrapper {
     display: block;
     max-width: 1080px;

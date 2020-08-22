@@ -1622,6 +1622,8 @@ body {
   text-align: center;
   font-family: "Montserrat";
   color: #ffffff;
+  border-bottom: 1px solid #E7003A;
+  border-top: 1px solid #E7003A;
 }
 
 .quote-wrapper p {
@@ -1638,12 +1640,12 @@ body {
 }
 
 .quote-wrapper .person {
-  color: #E7003A;
+  color: #000;
   font-size: 1rem;
   line-height: 1.75em;
   padding: 10px 0 0;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .footer {
