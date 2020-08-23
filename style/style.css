@@ -1724,6 +1724,10 @@ body {
   font-weight: 600;
 }
 
+.catalog {
+  min-height: 600px;
+}
+
 .catalog .page-header {
   position: relative;
   display: block;
@@ -1859,6 +1863,7 @@ body {
 
 .catalog .row-item .name,
 .catalog .row-item .price {
+  font-size: .875em;
   font-family: "Karla";
   margin: 6px 0;
 }

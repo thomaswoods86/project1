@@ -39,7 +39,7 @@
 
 
 .catalog {
-
+min-height: 600px;
   .page-header {
     position: relative;
     display: block;
@@ -178,6 +178,7 @@
 
       .name,
       .price {
+        font-size: .875em;
         font-family: $sans;
         margin: 6px 0;
       }
