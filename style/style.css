@@ -1821,8 +1821,9 @@ body {
 }
 
 .catalog .row-item {
-  width: 100%;
-  margin: 0 0 40px;
+  display: inline-block;
+  width: 45%;
+  margin: 0 2% 40px;
 }
 
 @media (min-width: 768px) {
@@ -1837,7 +1838,7 @@ body {
 
 .catalog .row-item img {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .catalog .row-item .name,
