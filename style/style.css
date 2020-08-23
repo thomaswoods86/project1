@@ -1626,8 +1626,6 @@ body {
   text-align: center;
   font-family: "Montserrat";
   color: #ffffff;
-  border-bottom: 1px solid #E7003A;
-  border-top: 1px solid #E7003A;
 }
 
 .quote-wrapper p {
@@ -1650,6 +1648,176 @@ body {
   padding: 10px 0 0;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.catalog .page-header {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.catalog .page-header-wrap {
+  display: block;
+  max-width: 1080px;
+  padding: 80px 20px;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  background: url("https://images.unsplash.com/photo-1598095568755-47ce2097ed86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2133&q=80") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.catalog .page-header-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff93;
+}
+
+.catalog .page-header-wrap .title {
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
+  color: #313131;
+  text-transform: uppercase;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.catalog .page-header-button {
+  border: 1px solid #313131;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin: 10px 0 10px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .catalog .page-header-button {
+    margin-top: 100px;
+  }
+}
+
+.catalog .page-header-button a {
+  display: block;
+  color: #000;
+  padding: 10px 30px;
+  text-decoration: none;
+  -webkit-transition: .25s;
+  transition: .25s;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 0px;
+}
+
+.catalog .page-header-button a:hover {
+  color: white;
+  background-color: #313131;
+}
+
+.catalog .page-header-button a:hover:after {
+  background-color: #fff;
+}
+
+.catalog .row {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.catalog .row-item {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .catalog .row-item {
+    display: inline-block;
+    width: 235px;
+    height: 350px;
+    margin: 0 15px;
+    -webkit-transition: .05s;
+    transition: .05s;
+  }
+}
+
+.catalog .row-item img {
+  width: 100%;
+  height: 300px;
+}
+
+.catalog .row-item .name,
+.catalog .row-item .price {
+  font-family: "Karla";
+}
+
+.catalog .duo-row {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.catalog .duo-row-item {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .catalog .duo-row-item {
+    display: block;
+    display: inline-block;
+    width: 470px;
+    height: 700px;
+    margin: 0 30px;
+  }
+}
+
+.catalog .duo-row-item img {
+  width: 100%;
+  height: 650px;
+}
+
+.catalog .duo-row-item .name,
+.catalog .duo-row-item .price {
+  font-family: "Karla";
+}
+
+.catalog .hide {
+  display: none;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.catalog .filter-wrap {
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.catalog .filter-wrap #filter {
+  text-align: center;
+  display: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  background: #f3f3f3;
+  border-radius: 20px;
+}
+
+.catalog .filter-wrap select {
+  border: 0px solid red !important;
+}
+
+.catalog .filter-wrap select:focus {
+  outline: 0px solid red !important;
 }
 
 .footer {

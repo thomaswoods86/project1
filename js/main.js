@@ -51,6 +51,42 @@ $("document").ready(function () {
   });
   $('.pic-wrap').slick('unslick');
 
+// $('.page-header').on("click", function(){
+// // $('.shirt').fadeToggle('hide');
+// $('.shirt').toggleClass('hide');
+// });
+
+$(document).on("change","#filter", function(){
+  if($(this).val()=='filter')
+  {
+    console.log("show all");
+        $('.hat').removeClass('hide');
+        $('.shirt').removeClass('hide');
+        $('.jacket').removeClass('hide');
+        console.log("jacket");
+      }
+    if($(this).val()=='jacket')
+    {
+        $('.hat').addClass('hide');
+        $('.shirt').addClass('hide');
+        $('.jacket').removeClass('hide');
+        console.log("jacket");
+      }
+      if($(this).val()=='shirt')
+      {
+        $('.shirt').removeClass('hide');
+        $('.hat').addClass('hide');
+        $('.jacket').addClass('hide');
+        console.log("shirt");
+    }
+      if($(this).val()=='hat')
+      {
+        $('.hat').removeClass('hide');
+        $('.shirt').addClass('hide');
+        $('.jacket').addClass('hide');
+        console.log("hat");
+    }
+});
 
   let count = $(".new").length;
   console.log(count);
