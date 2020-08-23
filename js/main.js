@@ -53,7 +53,7 @@ $("document").ready(function () {
   // });
 
   $(document).on("change", "#filter", function () {
-    if ($(this).val() == 'filter') {
+    if ($(this).val() == 'all') {
       $('.hat').removeClass('hide');
       $('.shirt').removeClass('hide');
       $('.jacket').removeClass('hide');
