@@ -1877,6 +1877,15 @@ body {
      object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .catalog .row-item img {
+    width: 100%;
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .catalog .row-item .name,
 .catalog .row-item .price {
   font-size: .875em;
