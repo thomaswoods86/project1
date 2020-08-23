@@ -5,6 +5,75 @@
   margin: 0;
 }
 
+.neko {
+  position: relative;
+  top: 0;
+  height: 55px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .neko {
+    display: none;
+  }
+}
+
+.neko button {
+  float: right;
+  position: relative;
+  z-index: 999;
+  border: none;
+}
+
+.neko .hamburger {
+  position: absolute !important;
+  top: 5px;
+  right: 5px;
+  display: block;
+  z-index: 99;
+}
+
+.neko .hamburger:focus {
+  outline: 0px solid;
+  border: 0px solid;
+}
+
+@media (min-width: 768px) {
+  .neko .hamburger {
+    display: none;
+  }
+}
+
+.neko .hamburger:hover {
+  opacity: 1;
+}
+
+.neko .hamburger.hamburger.is-active:hover {
+  opacity: 1;
+}
+
+.neko .hamburger .hamburger-inner,
+.neko .hamburger-inner:before,
+.neko .hamburger-inner:after {
+  background: #000;
+}
+
+.neko .hamburger .hamburger-inner {
+  width: 75%;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.neko .hamburger.is-active .hamburger-inner {
+  width: 100%;
+}
+
+.neko .hamburger.is-active .hamburger-inner,
+.neko .hamburger.is-active .hamburger-inner:before,
+.neko .hamburger.is-active .hamburger-inner:after {
+  background: #fff;
+}
+
 * {
   margin: 0;
 }
@@ -1655,59 +1724,6 @@ body {
   font-weight: 600;
 }
 
-.catalog button {
-  border: none;
-}
-
-.catalog .hamburger {
-  position: absolute !important;
-  top: 5px;
-  right: 5px;
-  display: block;
-  z-index: 99;
-}
-
-.catalog .hamburger:focus {
-  outline: 0px solid;
-  border: 0px solid;
-}
-
-@media (min-width: 768px) {
-  .catalog .hamburger {
-    display: none;
-  }
-}
-
-.catalog .hamburger:hover {
-  opacity: 1;
-}
-
-.catalog .hamburger.hamburger.is-active:hover {
-  opacity: 1;
-}
-
-.catalog .hamburger .hamburger-inner,
-.catalog .hamburger-inner:before,
-.catalog .hamburger-inner:after {
-  background: #000;
-}
-
-.catalog .hamburger .hamburger-inner {
-  width: 75%;
-  -webkit-transition: .25s;
-  transition: .25s;
-}
-
-.catalog .hamburger.is-active .hamburger-inner {
-  width: 100%;
-}
-
-.catalog .hamburger.is-active .hamburger-inner,
-.catalog .hamburger.is-active .hamburger-inner:before,
-.catalog .hamburger.is-active .hamburger-inner:after {
-  background: #fff;
-}
-
 .catalog .page-header {
   position: relative;
   display: block;
@@ -1838,13 +1854,17 @@ body {
 
 .catalog .row-item img {
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 
 .catalog .row-item .name,
 .catalog .row-item .price {
   font-family: "Karla";
   margin: 6px 0;
+}
+
+.catalog .row-item .price {
+  font-weight: 600;
 }
 
 .catalog .duo-row {
