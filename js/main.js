@@ -63,28 +63,24 @@ $(document).on("change","#filter", function(){
         $('.hat').removeClass('hide');
         $('.shirt').removeClass('hide');
         $('.jacket').removeClass('hide');
-        console.log("jacket");
       }
     if($(this).val()=='jacket')
     {
         $('.hat').addClass('hide');
         $('.shirt').addClass('hide');
         $('.jacket').removeClass('hide');
-        console.log("jacket");
       }
       if($(this).val()=='shirt')
       {
         $('.shirt').removeClass('hide');
         $('.hat').addClass('hide');
         $('.jacket').addClass('hide');
-        console.log("shirt");
     }
       if($(this).val()=='hat')
       {
         $('.hat').removeClass('hide');
         $('.shirt').addClass('hide');
         $('.jacket').addClass('hide');
-        console.log("hat");
     }
 });
 
