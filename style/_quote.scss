@@ -160,13 +160,21 @@ min-height: 1100px;
     margin: 0 auto;
     padding: 20px;
 
+
     &-item {
       display: inline-block;
       width: 45%;
       margin: 0 2% 40px;
 
 
-      @include bp(medium) {
+      @include bp(medium ) {
+        display: inline-block;
+        width: 205px;
+        margin: 0 10px 40px;
+        transition: .05s;
+      }
+
+      @include bp(xlarge) {
         display: inline-block;
         width: 235px;
         margin: 0 15px 40px;

@@ -1863,6 +1863,16 @@ body {
 @media (min-width: 768px) {
   .catalog .row-item {
     display: inline-block;
+    width: 205px;
+    margin: 0 10px 40px;
+    -webkit-transition: .05s;
+    transition: .05s;
+  }
+}
+
+@media (min-width: 1280px) {
+  .catalog .row-item {
+    display: inline-block;
     width: 235px;
     margin: 0 15px 40px;
     -webkit-transition: .05s;
