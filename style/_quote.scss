@@ -51,6 +51,11 @@
     display: block;
     z-index: 99;
 
+    &:focus {
+      outline: 0px solid;
+      border: 0px solid;
+    } 
+
     @include bp(medium) {
       display: none;
     }
@@ -82,7 +87,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner:before,
   .hamburger.is-active .hamburger-inner:after {
-    background: #000;
+    background: #fff;
   }
   .page-header {
     position: relative;

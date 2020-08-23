@@ -83,6 +83,11 @@
     display: block;
     z-index: 99;
 
+    &:focus {
+      outline: 0px solid;
+      border: 0px solid;
+    }
+
     @include bp(medium) {
       display: none;
     }

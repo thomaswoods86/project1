@@ -1226,6 +1226,11 @@ body {
   z-index: 99;
 }
 
+.mma .hamburger:focus {
+  outline: 0px solid;
+  border: 0px solid;
+}
+
 @media (min-width: 768px) {
   .mma .hamburger {
     display: none;
@@ -1662,6 +1667,11 @@ body {
   z-index: 99;
 }
 
+.catalog .hamburger:focus {
+  outline: 0px solid;
+  border: 0px solid;
+}
+
 @media (min-width: 768px) {
   .catalog .hamburger {
     display: none;
@@ -1695,7 +1705,7 @@ body {
 .catalog .hamburger.is-active .hamburger-inner,
 .catalog .hamburger.is-active .hamburger-inner:before,
 .catalog .hamburger.is-active .hamburger-inner:after {
-  background: #000;
+  background: #fff;
 }
 
 .catalog .page-header {
