@@ -1859,6 +1859,8 @@ body {
 .catalog .row-item img {
   width: 100%;
   height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog .row-item .name,
