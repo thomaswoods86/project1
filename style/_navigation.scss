@@ -25,20 +25,6 @@
 
   }
 
-  .logo {
-    display: none;
-
-    @include bp(large) {
-      display: block;
-      position: absolute;
-      height: 60px;
-      width: 150px;
-      // background: url("https://i.ibb.co/2SJtYMx/logo-1.png");
-      top: -20px;
-      // outline: 2px solid $pink-red;
-    }
-  }
-
   .icons {
     position: absolute;
     width: 150px;
