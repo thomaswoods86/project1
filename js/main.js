@@ -34,7 +34,7 @@ $("document").ready(function () {
     responsive: [{
       breakpoint: 480,
       settings: {
-        arrows: true,
+        arrows: false,
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 1,
