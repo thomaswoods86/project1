@@ -146,10 +146,10 @@
     }
 
     .price {
-      color: $pink-red;
+      // color: $pink-red;
       font-size: .875em;
       margin-top: 7px;
-      // font-weight: 700;
+      font-weight: 700;
     }
 
     .text,
@@ -253,7 +253,7 @@
     color: $pink-red;
     font-size: .875em;
     margin-top: 7px;
-    // font-weight: 700;
+    font-weight: 600;
   }
 
   .text,

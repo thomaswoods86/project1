@@ -89,6 +89,7 @@ min-height: 600px;
         text-transform: uppercase;
         font-weight: 600;
         z-index: 2;
+        
         @include bp(medium){
         position: relative;
         text-align: center;

@@ -495,9 +495,9 @@ body {
 }
 
 .item-gallery .pic-wrap .box .price {
-  color: #E7003A;
   font-size: .875em;
   margin-top: 7px;
+  font-weight: 700;
 }
 
 .item-gallery .pic-wrap .box .text,
@@ -589,6 +589,7 @@ body {
   color: #E7003A;
   font-size: .875em;
   margin-top: 7px;
+  font-weight: 600;
 }
 
 .item-gallery .mobile-pic-wrap .box .text,
