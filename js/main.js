@@ -78,6 +78,11 @@ $("document").ready(function () {
     localStorage.setItem('#shirt', 'clicked')
     window.location.href="catalog.html";
   });
+
+  $("#jacket1").on("click", function () {
+    localStorage.setItem('#jacket1', 'clicked')
+    window.location.href="catalog.html";
+  });
   
   if(localStorage.getItem('#jacket') === 'clicked'){
     // if (jk() == 10) {
@@ -100,9 +105,14 @@ if(localStorage.getItem('#shirt') === 'clicked'){
     show2();
   // }
   localStorage.removeItem('#shirt');
-
 }
 
+if(localStorage.getItem('#jacket1') === 'clicked'){
+  // if (sr() == 30) {
+    show3();
+  // }
+  localStorage.removeItem('#jacket1');
+}
   
 
 
