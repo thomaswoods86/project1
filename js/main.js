@@ -31,39 +31,38 @@ $("document").ready(function () {
 
 
   
-  function show() {
+  function showJacket() {
     $("#filter").val('jacket');
     $('.hat').addClass('hide');
     $('.shirt').addClass('hide');
     $('.jacket').removeClass('hide');
+    $('.jeans').addClass('hide');
   }
   
-  function show1() {
+  function showHat() {
     $("#filter").val('hat');
     $('.hat').removeClass('hide');
     $('.shirt').addClass('hide');
     $('.jacket').addClass('hide');
+    $('.jeans').addClass('hide');
   }
   
-  function show2() {
+  function showShirt() {
     $("#filter").val('shirt');
     $('.hat').addClass('hide');
     $('.shirt').removeClass('hide');
     $('.jacket').addClass('hide');
+    $('.jeans').addClass('hide');
   }
-  
-  // function jk(){
-  //   var a = 10;
-  //   return a;
-  // }
-  // function ht(){
-  //   var a = 20;
-  //   return a;
-  // }
-  // function sr(){
-  //   var a = 30;
-  //   return a;
-  // }
+
+  function showJeans() {
+    $("#filter").val('jeans');
+    $('.hat').addClass('hide');
+    $('.shirt').addClass('hide');
+    $('.jacket').addClass('hide');
+    $('.jeans').removeClass('hide');
+  }
+
   $("#jacket").on("click", function () {
     localStorage.setItem('#jacket', 'clicked')
     window.location.href="catalog.html";
@@ -79,39 +78,29 @@ $("document").ready(function () {
     window.location.href="catalog.html";
   });
 
-  $("#jacket1").on("click", function () {
-    localStorage.setItem('#jacket1', 'clicked')
+  $("#jeans").on("click", function () {
+    localStorage.setItem('#jeans', 'clicked')
     window.location.href="catalog.html";
   });
   
-  if(localStorage.getItem('#jacket') === 'clicked'){
-    // if (jk() == 10) {
-      show();
-    // }
-    localStorage.removeItem('#jacket');
-
+if(localStorage.getItem('#jacket') === 'clicked'){
+    showJacket();
+  localStorage.removeItem('#jacket');
 }
 
 if(localStorage.getItem('#hat') === 'clicked'){
-  // if (ht() == 20) {
-    show1();
-  // }
+    showHat();
   localStorage.removeItem('#hat');
-
 }
 
 if(localStorage.getItem('#shirt') === 'clicked'){
-  // if (sr() == 30) {
-    show2();
-  // }
+    showShirt();
   localStorage.removeItem('#shirt');
 }
 
-if(localStorage.getItem('#jacket1') === 'clicked'){
-  // if (sr() == 30) {
-    show3();
-  // }
-  localStorage.removeItem('#jacket1');
+if(localStorage.getItem('#jeans') === 'clicked'){
+    showJeans();
+  localStorage.removeItem('#jeans');
 }
   
 
@@ -154,21 +143,31 @@ if(localStorage.getItem('#jacket1') === 'clicked'){
       $('.hat').removeClass('hide');
       $('.shirt').removeClass('hide');
       $('.jacket').removeClass('hide');
+      $('.jeans').removeClass('hide');
     }
     if ($(this).val() == 'jacket') {
       $('.hat').addClass('hide');
       $('.shirt').addClass('hide');
       $('.jacket').removeClass('hide');
+      $('.jeans').addClass('hide');
     }
     if ($(this).val() == 'shirt') {
       $('.shirt').removeClass('hide');
       $('.hat').addClass('hide');
       $('.jacket').addClass('hide');
+      $('.jeans').addClass('hide');
     }
     if ($(this).val() == 'hat') {
       $('.hat').removeClass('hide');
       $('.shirt').addClass('hide');
       $('.jacket').addClass('hide');
+      $('.jeans').addClass('hide');
+    }
+    if ($(this).val() == 'jeans') {
+      $('.hat').addClass('hide');
+      $('.shirt').addClass('hide');
+      $('.jacket').addClass('hide');
+      $('.jeans').removeClass('hide');
     }
   });
 
