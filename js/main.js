@@ -29,6 +29,93 @@ $("document").ready(function () {
     $(".square1").removeClass("down");
   });
 
+
+  
+  function show() {
+    $("#filter").val('jacket');
+    $('.hat').addClass('hide');
+    $('.shirt').addClass('hide');
+    $('.jacket').removeClass('hide');
+  }
+  
+  function show1() {
+    $("#filter").val('hat');
+    $('.hat').removeClass('hide');
+    $('.shirt').addClass('hide');
+    $('.jacket').addClass('hide');
+  }
+  
+  function show2() {
+    $("#filter").val('shirt');
+    $('.hat').addClass('hide');
+    $('.shirt').removeClass('hide');
+    $('.jacket').addClass('hide');
+  }
+  
+  // function jk(){
+  //   var a = 10;
+  //   return a;
+  // }
+  // function ht(){
+  //   var a = 20;
+  //   return a;
+  // }
+  // function sr(){
+  //   var a = 30;
+  //   return a;
+  // }
+  $("#jacket").on("click", function () {
+    localStorage.setItem('#jacket', 'clicked')
+    window.location.href="catalog.html";
+  });
+  
+  $("#hat").on("click", function () {
+    localStorage.setItem('#hat', 'clicked')
+    window.location.href="catalog.html";
+  });
+  
+  $("#shirt").on("click", function () {
+    localStorage.setItem('#shirt', 'clicked')
+    window.location.href="catalog.html";
+  });
+  
+  if(localStorage.getItem('#jacket') === 'clicked'){
+    // if (jk() == 10) {
+      show();
+    // }
+    localStorage.removeItem('#jacket');
+
+}
+
+if(localStorage.getItem('#hat') === 'clicked'){
+  // if (ht() == 20) {
+    show1();
+  // }
+  localStorage.removeItem('#hat');
+
+}
+
+if(localStorage.getItem('#shirt') === 'clicked'){
+  // if (sr() == 30) {
+    show2();
+  // }
+  localStorage.removeItem('#shirt');
+
+}
+
+  
+
+
+  // $("#shirt").on("click", function () {
+  //   //hum(6);
+  //   console.log(hum(6));
+  // });
+  // if (hum(6) == 6) {
+  //   $('.hat').addClass('hide');
+  //   $('.shirt').removeClass('hide');
+  //   $('.jacket').addClass('hide');
+  // }
+
   $('.mobile-pic-wrap').slick({
 
     responsive: [{
@@ -45,7 +132,7 @@ $("document").ready(function () {
       }
     }]
   });
-  $('.pic-wrap').slick('unslick');
+  // $('.pic-wrap').slick('unslick');
 
   // $('.page-header').on("click", function(){
   // // $('.shirt').fadeToggle('hide');
@@ -75,8 +162,8 @@ $("document").ready(function () {
     }
   });
 
-  let count = $(".new").length;
-  console.log(count);
+  // let count = $(".new").length;
+  // console.log(count);
 
 
   $("a[href^='#']").click(function (e) {
